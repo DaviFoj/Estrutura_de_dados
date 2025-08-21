@@ -22,6 +22,10 @@ while True:
         print("Senha deve conter letras minúsculas, digite novamente")
         senha = input("digite sua senha: ")
         i += 1
+    elif senha.count('!') != 0 and senha.count('%') != 0 and senha.count('&') != 0 and senha.count('*') != 0 and senha.count('?') != 0 and senha.count('~') != 0 and senha.count('-') != 0 and senha.count('_') != 0 and senha.count('+') != 0 and senha.count('=') != 0 and senha.count('|') != 0 and senha.count('/') != 0 and senha.count(':') != 0:
+        print("A senha só deve ter os caracteres especiais estipulados, digite novamente")
+        senha = input("digite sua senha: ")
+        i += 1
     elif senha.count('@') != 1:
         print("Senha deve conter exatamente um '@', digite novamente")
         senha = input("digite sua senha: ")
@@ -32,10 +36,6 @@ while True:
         i += 1
     elif senha.count('$') != 1:
         print("Senha deve conter exatamente um '$', digite novamente")
-        senha = input("digite sua senha: ")
-        i += 1
-    elif senha.count('!') != 0 and senha.count('%') != 0 and senha.count('&') != 0 and senha.count('*') != 0 and senha.count('?') != 0 and senha.count('~') != 0 and senha.count('-') != 0 and senha.count('_') != 0 and senha.count('+') != 0 and senha.count('=') != 0 and senha.count('|') != 0 and senha.count('/') != 0 and senha.count(':') != 0:
-        print("A senha só deve ter os caracteres especiais estipulados, digite novamente")
         senha = input("digite sua senha: ")
         i += 1
     else:
